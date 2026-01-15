@@ -1,0 +1,7 @@
+{
+  "name": "StockMaster Pro - High Fidelity Inventory System",
+  "description": "A premium, offline-first inventory and stock management application featuring multi-project support, file-based data sharing, and advanced stock tracking with a luxurious dark green and gold UI.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}

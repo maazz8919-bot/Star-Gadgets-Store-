@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>StockMaster Elite</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --emerald-deep: #064e3b;
+            --emerald-light: #065f46;
+            --gold-primary: #D4AF37;
+            --gold-light: #F1D37E;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            -webkit-tap-highlight-color: transparent;
+            background-color: #fcfdfc;
+            color: #062019;
+            overflow: hidden;
+        }
+        .luxury-gradient {
+            background: linear-gradient(135deg, var(--emerald-deep) 0%, var(--emerald-light) 100%);
+        }
+        .gold-shimmer {
+            background: linear-gradient(90deg, #BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .premium-card {
+            background: white;
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            box-shadow: 0 15px 35px -5px rgba(6, 78, 59, 0.08);
+            border-radius: 24px;
+        }
+        .gold-btn {
+            background: linear-gradient(to bottom, #D4AF37, #B38728);
+            box-shadow: 0 4px 15px rgba(179, 135, 40, 0.3);
+        }
+        .footer-blur {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(15px);
+            border-top: 1px solid rgba(212, 175, 55, 0.2);
+        }
+        /* Page Transition */
+        .page-enter {
+            animation: slideIn 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+        }
+        @keyframes slideIn {
+            from { opacity: 0; transform: scale(0.98) translateY(10px); }
+            to { opacity: 1; transform: scale(1) translateY(0); }
+        }
+        ::-webkit-scrollbar { display: none; }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/"
+  }
+}
+</script>
+</head>
+<body class="bg-slate-50">
+    <div id="root"></div>
+</body>
+</html>
